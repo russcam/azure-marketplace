@@ -54,7 +54,8 @@
         "provider": "[toUpper(parameters('elasticTags').provider)]"
       },
       "properties": {
-        "publicIPAllocationMethod": "Dynamic",
+        "publicIPAllocationMethod": "Static",
+        "ipAddress": "<Add desired IP address here>",
         "dnsSettings": {
           "domainNameLabel": "[concat('kb-', uniqueString(resourceGroup().id))]"
         }
